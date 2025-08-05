@@ -62,6 +62,36 @@ Esses tipos são extensões muito usadas em projetos de back-end para detalhar m
 | Configuração         | ⚙️ \`:gear:\`                    | \`config\`          |
 | API                  | 🔌 \`:electric_plug:\`           | \`api\`             |
 
+## Tipos de Commits
+
+### ⚡ Método 1 para commit simplificado via terminal
+
+Usado para mudanças rápidas que não exigem corpo explicativo.
+
+Execute:
+
+\`\`\`bash
+git commit -m "tipo(escopo opcional): descrição curta"
+\`\`\`
+
+### 🛠️ Método 2 para commit detalhado via editor
+
+Para escrever commits completos com título, corpo e \`BREAKING CHANGE\` (se necessário), use:
+
+\`\`\`bash
+git commit
+\`\`\`
+
+Esse comando abrirá o editor padrão do Git para que você possa escrever a mensagem no seguinte formato:
+
+\`\`\`txt
+<tipo>(escopo opcional): descrição curta
+
+Corpo explicando o que foi feito, por que foi feito e detalhes relevantes.
+
+BREAKING CHANGE: descreva aqui o que quebra compatibilidade anterior, se houver.
+\`\`\`
+
 ## 📑 Exemplos Práticos de Commits
 
 | Tipo       | Exemplo de commit                                                       |
@@ -86,24 +116,6 @@ Esses tipos são extensões muito usadas em projetos de back-end para detalhar m
 | API                  | \`🔌 api(user): adiciona endpoint para resetar senha\`             |
 
 ## 🧾 Exemplos Completos de Mensagens de Commit
-
-### 🛠️ Método 1 – Commit detalhado via editor
-
-Para escrever commits completos com título, corpo e \`BREAKING CHANGE\` (se necessário), use:
-
-\`\`\`bash
-git commit
-\`\`\`
-
-Esse comando abrirá o editor padrão do Git para que você possa escrever a mensagem no seguinte formato:
-
-\`\`\`txt
-<tipo>(escopo opcional): descrição curta
-
-Corpo explicando o que foi feito, por que foi feito e detalhes relevantes.
-
-BREAKING CHANGE: descreva aqui o que quebra compatibilidade anterior, se houver.
-\`\`\`
 
 Abaixo estão exemplos usando a estrutura completa recomendada pelo [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary):
 
